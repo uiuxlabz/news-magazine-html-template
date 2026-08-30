@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the latest stories across World, Technology, Lifestyle, and more — only at NEWSMAG.">
+  <title>World — NEWSMAG</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== TOP BAR ========== -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar__date">
+        <span id="current-date"></span>
+      </div>
+      <div class="top-bar__links">
+        <a href="contact.html">Contact</a>
+        <a href="#">Advertise</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo__name">NEWS<span>MAG</span></span>
+        <span class="logo__tagline">Stories That Matter.</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="category.html" class="nav__link active">World</a>
+        <a href="category.html" class="nav__link">Tech</a>
+        <a href="category.html" class="nav__link">Lifestyle</a>
+        <a href="category.html" class="nav__link">Opinion</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== CATEGORY HEADER ========== -->
+  <div class="category-header">
+    <div class="container">
+      <h1>World</h1>
+      <p>In-depth coverage of global affairs, diplomacy, and the forces shaping our interconnected world.</p>
+    </div>
+  </div>
+
+  <!-- ========== CATEGORY CONTENT ========== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal">
+        <div class="filter-bar__tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="politics">Politics</button>
+          <button class="filter-tab" data-filter="diplomacy">Diplomacy</button>
+          <button class="filter-tab" data-filter="conflict">Conflict</button>
+          <button class="filter-tab" data-filter="humanitarian">Humanitarian</button>
+        </div>
+        <div class="filter-bar__sort">
+          <span class="text-gray" style="font-size: var(--fs-sm);">Sort by:</span>
+          <select aria-label="Sort articles">
+            <option value="latest">Latest</option>
+            <option value="popular">Most Popular</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="category-row">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="sidebar-widget reveal">
+            <h3 class="sidebar-widget__title">Trending Now</h3>
+            <div class="trending-list">
+              <div class="trending-item">
+                <span class="trending-item__number">01</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">The Future of Remote Work: How Companies Are Adapting to New Norms</a>
+                  <span class="trending-item__meta">5 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">02</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Cryptocurrency Markets Show Signs of Maturation Amid Regulatory Clarity</a>
+                  <span class="trending-item__meta">7 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">03</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Ocean Conservation Efforts Gain Momentum as New Marine Parks Announced</a>
+                  <span class="trending-item__meta">4 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">04</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Breakthrough in Renewable Energy Storage Promises Grid Independence</a>
+                  <span class="trending-item__meta">6 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">05</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Global Education Reform: Countries Unite for Digital Literacy Initiative</a>
+                  <span class="trending-item__meta">8 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget reveal">
+            <h3 class="sidebar-widget__title">Categories</h3>
+            <nav class="sidebar-nav">
+              <a href="category.html" class="sidebar-nav__link active">
+                World <span class="sidebar-nav__count">24</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Technology <span class="sidebar-nav__count">18</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Lifestyle <span class="sidebar-nav__count">15</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Business <span class="sidebar-nav__count">21</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Science <span class="sidebar-nav__count">12</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Opinion <span class="sidebar-nav__count">9</span>
+              </a>
+            </nav>
+          </div>
+
+          <div class="sidebar-widget reveal">
+            <h3 class="sidebar-widget__title">Newsletter</h3>
+            <p class="text-gray" style="font-size: var(--fs-sm); margin-bottom: var(--sp-md);">Get the day's top stories delivered to your inbox every morning.</p>
+            <form class="newsletter__form" data-form="newsletter" style="max-width: 100%; flex-direction: column;">
+              <input type="email" class="newsletter__input" placeholder="Enter your email address" required aria-label="Email address">
+              <button type="submit" class="newsletter__btn" style="width: 100%;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div>
+          <div class="category-articles stagger-children">
+            <a href="article.html" class="card reveal" data-category="diplomacy">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-825x525.jpg" alt="Diplomatic summit" class="card__image">
+                <span class="card__badge"><span class="badge badge--red">Exclusive</span></span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Diplomatic Tensions Rise as Trade Negotiations Stall Between Major Economies</h3>
+                <p class="card__excerpt">Negotiators from the world's largest economies failed to reach an agreement on key trade provisions, raising concerns about potential retaliatory measures that could reshape global commerce for years to come.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <img src="assets/img/news-350x223-1.jpg" alt="Author avatar" class="card__author-avatar">
+                    <span>James Cooper</span>
+                  </div>
+                  <span>15 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-1" data-category="humanitarian">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-450x350-1.jpg" alt="Humanitarian aid" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">International Aid Organizations Scale Up Response to Humanitarian Crisis</h3>
+                <p class="card__excerpt">Major relief efforts are underway as organizations mobilize resources to address the growing humanitarian needs in affected regions.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Elena Rodriguez</span>
+                  </div>
+                  <span>10 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-2" data-category="conflict">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-450x350-2.jpg" alt="Peace negotiations" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Peace Talks Resume as Ceasefire Holds in Long-Running Regional Conflict</h3>
+                <p class="card__excerpt">After months of stalled negotiations, parties have returned to the table with renewed optimism following an extended ceasefire agreement.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Marcus Chen</span>
+                  </div>
+                  <span>12 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal" data-category="politics">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-350x223-2.jpg" alt="Election coverage" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Landmark Election Results Signal Shift in Global Political Landscape</h3>
+                <p class="card__excerpt">Voters across multiple nations delivered sweeping mandates that could redefine international alliances and policy priorities for the coming decade.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>James Cooper</span>
+                  </div>
+                  <span>9 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-1" data-category="diplomacy">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-350x223-3.jpg" alt="United Nations assembly" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">United Nations Assembly Adopts Resolution on Global Water Access</h3>
+                <p class="card__excerpt">In a landmark decision, member states committed to providing clean water to 2 billion people currently living without reliable access.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Priya Sharma</span>
+                  </div>
+                  <span>7 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-2" data-category="humanitarian">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-350x223-4.jpg" alt="Refugee camp" class="card__image">
+                <span class="card__badge"><span class="badge badge--red">Investigation</span></span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Inside the Refugee Camps: Stories of Resilience Amid Unimaginable Hardship</h3>
+                <p class="card__excerpt">Our reporters spent three weeks documenting the daily realities faced by displaced families and the volunteers working to restore dignity.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Sofia Martinez</span>
+                  </div>
+                  <span>18 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal" data-category="politics">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-350x223-5.jpg" alt="Trade summit" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">New Trade Bloc Emerges as Developing Nations Forge Economic Alliance</h3>
+                <p class="card__excerpt">A coalition of 15 developing economies announced a comprehensive trade agreement aimed at reducing dependency on traditional economic powerhouses.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Marcus Chen</span>
+                  </div>
+                  <span>11 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-1" data-category="conflict">
+              <div class="card__image-wrapper">
+                <img src="assets/img/news-450x350-1.jpg" alt="Peacekeeping mission" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Peacekeeping Forces Deploy to Stabilize Tensions in Disputed Border Region</h3>
+                <p class="card__excerpt">An international coalition has agreed to send peacekeeping troops to the contested area following months of escalating violence.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>David Okafor</span>
+                  </div>
+                  <span>8 min read</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter__title reveal">Stay Informed</h2>
+      <p class="newsletter__subtitle reveal reveal-delay-1">Get the day's top stories delivered to your inbox every morning. No spam, just quality journalism.</p>
+      <form class="newsletter__form reveal reveal-delay-2" data-form="newsletter">
+        <input type="email" class="newsletter__input" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit" class="newsletter__btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="logo__name">NEWS<span>MAG</span></div>
+          <p>Delivering accurate, unbiased news and in-depth analysis to readers worldwide. Our commitment to truth and transparency drives every story we publish.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Sections</h4>
+          <ul class="footer__links">
+            <li><a href="category.html">World</a></li>
+            <li><a href="category.html">Technology</a></li>
+            <li><a href="category.html">Lifestyle</a></li>
+            <li><a href="category.html">Business</a></li>
+            <li><a href="category.html">Science</a></li>
+            <li><a href="category.html">Opinion</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Press Room</a></li>
+            <li><a href="#">Ethics Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Corrections</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year></span> NEWSMAG. All rights reserved. Stories That Matter.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Set current date
+    (function() {
+      var dateEl = document.getElementById('current-date');
+      if (dateEl) {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateEl.textContent = new Date().toLocaleDateString('en-US', options);
+      }
+    })();
+  </script>
+</body>
+</html>
