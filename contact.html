@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with NEWSMAG. Reach our editorial team, submit a tip, or inquire about advertising opportunities.">
+  <title>Contact — NEWSMAG</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== TOP BAR ========== -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar__date">
+        <span id="current-date"></span>
+      </div>
+      <div class="top-bar__links">
+        <a href="contact.html">Contact</a>
+        <a href="#">Advertise</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo__name">NEWS<span>MAG</span></span>
+        <span class="logo__tagline">Stories That Matter.</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="category.html" class="nav__link">World</a>
+        <a href="category.html" class="nav__link">Tech</a>
+        <a href="category.html" class="nav__link">Lifestyle</a>
+        <a href="category.html" class="nav__link">Opinion</a>
+        <a href="contact.html" class="nav__link active">Contact</a>
+      </nav>
+
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== CONTACT HEADER ========== -->
+  <div class="contact-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Have a story tip, feedback, or inquiry? We would love to hear from you.</p>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact-section">
+    <div class="container">
+
+      <!-- Contact Form -->
+      <div class="contact-form reveal">
+        <h2 style="margin-bottom: var(--sp-lg);">Send Us a Message</h2>
+        <form data-form="contact">
+          <div class="form-group">
+            <label for="contact-name">Full Name <span class="text-red">*</span></label>
+            <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+            <span class="error-msg">Please enter your name.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email Address <span class="text-red">*</span></label>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+            <span class="error-msg">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000">
+            <span class="error-msg">Please enter a valid phone number.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">Subject <span class="text-red">*</span></label>
+            <select id="contact-subject" name="subject" required>
+              <option value="">Select a subject...</option>
+              <option value="editorial">Editorial Inquiry</option>
+              <option value="tip">Story Tip</option>
+              <option value="advertising">Advertising</option>
+              <option value="feedback">Feedback</option>
+              <option value="corrections">Corrections</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error-msg">Please select a subject.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message <span class="text-red">*</span></label>
+            <textarea id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+            <span class="error-msg">Please enter a message (at least 10 characters).</span>
+          </div>
+
+          <button type="submit" class="form-submit">Send Message</button>
+
+          <div class="form-ok">Your message has been sent successfully. We will get back to you within 24 hours.</div>
+          <div class="form-err">Something went wrong. Please check your inputs and try again.</div>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-info__card reveal">
+          <h3>Editorial Office</h3>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">HQ</div>
+            <div class="contact-info__text">
+              <h4>Headquarters</h4>
+              <p>350 Fifth Avenue, 72nd Floor<br>New York, NY 10118</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">EM</div>
+            <div class="contact-info__text">
+              <h4>Email</h4>
+              <p>editorial@newsmag.com</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">PH</div>
+            <div class="contact-info__text">
+              <h4>Phone</h4>
+              <p>+1 (212) 555-0199</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info__card reveal reveal-delay-1">
+          <h3>Business Hours</h3>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">MF</div>
+            <div class="contact-info__text">
+              <h4>Monday — Friday</h4>
+              <p>9:00 AM — 6:00 PM (EST)</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">SA</div>
+            <div class="contact-info__text">
+              <h4>Saturday</h4>
+              <p>10:00 AM — 2:00 PM (EST)</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">SU</div>
+            <div class="contact-info__text">
+              <h4>Sunday</h4>
+              <p>Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info__card reveal reveal-delay-2">
+          <h3>Follow Us</h3>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">FB</div>
+            <div class="contact-info__text">
+              <h4>Facebook</h4>
+              <p>@newsmag</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">TW</div>
+            <div class="contact-info__text">
+              <h4>Twitter</h4>
+              <p>@newsmag</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">IG</div>
+            <div class="contact-info__text">
+              <h4>Instagram</h4>
+              <p>@newsmag</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon">LI</div>
+            <div class="contact-info__text">
+              <h4>LinkedIn</h4>
+              <p>NEWSMAG Media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter__title reveal">Stay Informed</h2>
+      <p class="newsletter__subtitle reveal reveal-delay-1">Get the day's top stories delivered to your inbox every morning. No spam, just quality journalism.</p>
+      <form class="newsletter__form reveal reveal-delay-2" data-form="newsletter">
+        <input type="email" class="newsletter__input" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit" class="newsletter__btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="logo__name">NEWS<span>MAG</span></div>
+          <p>Delivering accurate, unbiased news and in-depth analysis to readers worldwide. Our commitment to truth and transparency drives every story we publish.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Sections</h4>
+          <ul class="footer__links">
+            <li><a href="category.html">World</a></li>
+            <li><a href="category.html">Technology</a></li>
+            <li><a href="category.html">Lifestyle</a></li>
+            <li><a href="category.html">Business</a></li>
+            <li><a href="category.html">Science</a></li>
+            <li><a href="category.html">Opinion</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Press Room</a></li>
+            <li><a href="#">Ethics Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Corrections</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year></span> NEWSMAG. All rights reserved. Stories That Matter.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Set current date
+    (function() {
+      var dateEl = document.getElementById('current-date');
+      if (dateEl) {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateEl.textContent = new Date().toLocaleDateString('en-US', options);
+      }
+    })();
+  </script>
+</body>
+</html>

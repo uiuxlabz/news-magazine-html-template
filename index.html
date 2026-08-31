@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEWSMAG - Stories That Matter. Your trusted source for breaking news, in-depth analysis, and compelling stories from around the world.">
+  <title>NEWSMAG — Stories That Matter.</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== TOP BAR ========== -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar__date">
+        <span id="current-date"></span>
+      </div>
+      <div class="top-bar__links">
+        <a href="contact.html">Contact</a>
+        <a href="#">Advertise</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo__name">NEWS<span>MAG</span></span>
+        <span class="logo__tagline">Stories That Matter.</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="category.html" class="nav__link">World</a>
+        <a href="category.html" class="nav__link">Tech</a>
+        <a href="category.html" class="nav__link">Lifestyle</a>
+        <a href="category.html" class="nav__link">Opinion</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== BREAKING NEWS TICKER ========== -->
+  <div class="ticker" role="marquee" aria-label="Breaking news">
+    <div class="container">
+      <span class="ticker__label">Breaking</span>
+      <div class="ticker__content">
+        <div class="ticker__track">
+          <span class="ticker__item">Global climate summit reaches historic agreement on carbon emissions targets</span>
+          <span class="ticker__item">Tech stocks surge as AI sector reports record quarterly earnings</span>
+          <span class="ticker__item">International space station welcomes new research module</span>
+          <span class="ticker__item">Central banks signal potential policy shifts in upcoming sessions</span>
+          <span class="ticker__item">Major breakthrough in quantum computing announced by research team</span>
+          <!-- Duplicate for seamless scroll -->
+          <span class="ticker__item">Global climate summit reaches historic agreement on carbon emissions targets</span>
+          <span class="ticker__item">Tech stocks surge as AI sector reports record quarterly earnings</span>
+          <span class="ticker__item">International space station welcomes new research module</span>
+          <span class="ticker__item">Central banks signal potential policy shifts in upcoming sessions</span>
+          <span class="ticker__item">Major breakthrough in quantum computing announced by research team</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="container">
+      <!-- Main Featured Article -->
+      <a href="article.html" class="hero__main reveal">
+        <img src="assets/img/hero-main.jpg" alt="Global leaders convene for climate summit" class="hero__image">
+        <div class="hero__overlay">
+          <span class="badge badge--red">Featured</span>
+          <h2>Global Leaders Convene for Historic Climate Summit as Urgency Grows</h2>
+          <p>World leaders gathered in Geneva this week to address the escalating climate crisis, marking the most significant environmental conference in over a decade.</p>
+          <div class="meta">
+            <span>By Sarah Mitchell</span>
+            <span>|</span>
+            <span>August 28, 2026</span>
+            <span>|</span>
+            <span>8 min read</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Sidebar Stories -->
+      <div class="hero__sidebar">
+        <a href="article.html" class="hero-card reveal reveal-delay-1">
+          <img src="assets/img/hero-side-1.jpg" alt="AI regulation debate" class="hero-card__image">
+          <div class="hero-card__content">
+            <span class="badge badge--dark" style="align-self: flex-start;">Tech</span>
+            <h3 class="hero-card__title">EU Passes Landmark AI Regulation Framework, Sets Global Precedent</h3>
+            <span class="hero-card__meta">12 min read</span>
+          </div>
+        </a>
+
+        <a href="article.html" class="hero-card reveal reveal-delay-2">
+          <img src="assets/img/hero-side-2.jpg" alt="Economic outlook" class="hero-card__image">
+          <div class="hero-card__content">
+            <span class="badge badge--dark" style="align-self: flex-start;">Economy</span>
+            <h3 class="hero-card__title">Markets Rally as Central Banks Signal Rate Stabilization</h3>
+            <span class="hero-card__meta">6 min read</span>
+          </div>
+        </a>
+
+        <a href="article.html" class="hero-card reveal reveal-delay-3">
+          <img src="assets/img/hero-side-3.jpg" alt="Space exploration" class="hero-card__image">
+          <div class="hero-card__content">
+            <span class="badge badge--dark" style="align-self: flex-start;">Science</span>
+            <h3 class="hero-card__title">New Mars Mission Reveals Evidence of Ancient Microbial Life</h3>
+            <span class="hero-card__meta">10 min read</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORLD SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="category-row">
+        <div class="sidebar">
+          <div class="sidebar-widget reveal">
+            <h3 class="sidebar-widget__title">Trending Now</h3>
+            <div class="trending-list">
+              <div class="trending-item">
+                <span class="trending-item__number">01</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">The Future of Remote Work: How Companies Are Adapting to New Norms</a>
+                  <span class="trending-item__meta">5 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">02</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Cryptocurrency Markets Show Signs of Maturation Amid Regulatory Clarity</a>
+                  <span class="trending-item__meta">7 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">03</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Ocean Conservation Efforts Gain Momentum as New Marine Parks Announced</a>
+                  <span class="trending-item__meta">4 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">04</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Breakthrough in Renewable Energy Storage Promises Grid Independence</a>
+                  <span class="trending-item__meta">6 min read</span>
+                </div>
+              </div>
+              <div class="trending-item">
+                <span class="trending-item__number">05</span>
+                <div>
+                  <a href="article.html" class="trending-item__title">Global Education Reform: Countries Unite for Digital Literacy Initiative</a>
+                  <span class="trending-item__meta">8 min read</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget reveal">
+            <h3 class="sidebar-widget__title">Categories</h3>
+            <nav class="sidebar-nav">
+              <a href="category.html" class="sidebar-nav__link active">
+                World <span class="sidebar-nav__count">24</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Technology <span class="sidebar-nav__count">18</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Lifestyle <span class="sidebar-nav__count">15</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Business <span class="sidebar-nav__count">21</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Science <span class="sidebar-nav__count">12</span>
+              </a>
+              <a href="category.html" class="sidebar-nav__link">
+                Opinion <span class="sidebar-nav__count">9</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="section-title reveal">World</h2>
+          <div class="category-articles stagger-children">
+            <a href="article.html" class="card reveal">
+              <div class="card__image-wrapper">
+                <img src="assets/img/world-1.jpg" alt="Diplomatic summit" class="card__image">
+                <span class="card__badge"><span class="badge badge--red">Exclusive</span></span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Diplomatic Tensions Rise as Trade Negotiations Stall Between Major Economies</h3>
+                <p class="card__excerpt">Negotiators from the world's largest economies failed to reach an agreement on key trade provisions, raising concerns about potential retaliatory measures.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <img src="assets/img/author-avatar.jpg" alt="Author avatar" class="card__author-avatar">
+                    <span>James Cooper</span>
+                  </div>
+                  <span>15 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-1">
+              <div class="card__image-wrapper">
+                <img src="assets/img/world-2.jpg" alt="Humanitarian aid" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">International Aid Organizations Scale Up Response to Humanitarian Crisis</h3>
+                <p class="card__excerpt">Major relief efforts are underway as organizations mobilize resources to address the growing humanitarian needs in affected regions.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Elena Rodriguez</span>
+                  </div>
+                  <span>10 min read</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="article.html" class="card reveal reveal-delay-2">
+              <div class="card__image-wrapper">
+                <img src="assets/img/world-3.jpg" alt="Peace negotiations" class="card__image">
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Peace Talks Resume as Ceasefire Holds in Long-Running Regional Conflict</h3>
+                <p class="card__excerpt">After months of stalled negotiations, parties have returned to the table with renewed optimism following an extended ceasefire agreement.</p>
+                <div class="card__meta">
+                  <div class="card__author">
+                    <span>Marcus Chen</span>
+                  </div>
+                  <span>12 min read</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH SECTION ========== -->
+  <section class="section section--gray">
+    <div class="container">
+      <h2 class="section-title reveal">Technology</h2>
+      <div class="articles-grid stagger-children">
+        <a href="article.html" class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="assets/img/tech-1.jpg" alt="AI development" class="card__image">
+            <span class="card__badge"><span class="badge badge--red">Analysis</span></span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">The Race to Build Artificial General Intelligence: Who's Leading?</h3>
+            <p class="card__excerpt">As major tech companies pour billions into AGI research, the competition intensifies with significant implications for humanity's future.</p>
+            <div class="card__meta">
+              <div class="card__author">
+                <span>Dr. Alex Park</span>
+              </div>
+              <span>14 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="article.html" class="card reveal reveal-delay-1">
+          <div class="card__image-wrapper">
+            <img src="assets/img/tech-2.jpg" alt="Cybersecurity" class="card__image">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Cybersecurity in 2026: New Threats Demand Innovative Defense Strategies</h3>
+            <p class="card__excerpt">With cyber attacks becoming more sophisticated, organizations are turning to AI-powered defense systems to protect critical infrastructure.</p>
+            <div class="card__meta">
+              <div class="card__author">
+                <span>Rachel Kim</span>
+              </div>
+              <span>9 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="article.html" class="card reveal reveal-delay-2">
+          <div class="card__image-wrapper">
+            <img src="assets/img/tech-3.jpg" alt="Space technology" class="card__image">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Space Tourism Takes Off: Commercial Flights to Orbit Now Accessible</h3>
+            <p class="card__excerpt">The space tourism industry reaches a new milestone as ticket prices drop and flight frequency increases, opening the cosmos to civilians.</p>
+            <div class="card__meta">
+              <div class="card__author">
+                <span>Tom Bradley</span>
+              </div>
+              <span>7 min read</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LIFESTYLE SECTION ========== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Lifestyle</h2>
+      <div class="articles-grid stagger-children">
+        <a href="article.html" class="card reveal">
+          <div class="card__image-wrapper">
+            <img src="assets/img/lifestyle-1.jpg" alt="Sustainable living" class="card__image">
+            <span class="card__badge"><span class="badge badge--red">Wellness</span></span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">The Rise of Slow Living: How Minimalism Is Reshaping Modern Life</h3>
+            <p class="card__excerpt">More people are choosing to step back from the hustle, embracing intentional living and finding fulfillment in simplicity.</p>
+            <div class="card__meta">
+              <div class="card__author">
+                <span>Lisa Fernandez</span>
+              </div>
+              <span>6 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="article.html" class="card reveal reveal-delay-1">
+          <div class="card__image-wrapper">
+            <img src="assets/img/lifestyle-2.jpg" alt="Culinary trends" class="card__image">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Farm-to-Table Evolution: The New Generation of Sustainable Dining</h3>
+            <p class="card__excerpt">A new wave of restaurants is redefining sustainable cuisine, combining local sourcing with innovative culinary techniques.</p>
+            <div class="card__meta">
+              <div class="card__author">
+                <span>Marco Rossi</span>
+              </div>
+              <span>8 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="article.html" class="card reveal reveal-delay-2">
+          <div class="card__image-wrapper">
+            <img src="assets/img/lifestyle-3.jpg" alt="Travel destinations" class="card__image">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Hidden Gems: Underrated Travel Destinations for the Discerning Explorer</h3>
+            <p class="card__excerpt">Beyond the popular tourist trails lie extraordinary destinations waiting to be discovered, offering authentic cultural experiences.</p>
+            <div class="card__meta">
+              <div class="card__author">
+                <span>Nadia Okafor</span>
+              </div>
+              <span>11 min read</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter">
+    <div class="container">
+      <h2 class="newsletter__title reveal">Stay Informed</h2>
+      <p class="newsletter__subtitle reveal reveal-delay-1">Get the day's top stories delivered to your inbox every morning. No spam, just quality journalism.</p>
+      <form class="newsletter__form reveal reveal-delay-2" data-form="newsletter">
+        <input type="email" class="newsletter__input" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit" class="newsletter__btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="logo__name">NEWS<span>MAG</span></div>
+          <p>Delivering accurate, unbiased news and in-depth analysis to readers worldwide. Our commitment to truth and transparency drives every story we publish.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="LinkedIn">LI</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Sections</h4>
+          <ul class="footer__links">
+            <li><a href="category.html">World</a></li>
+            <li><a href="category.html">Technology</a></li>
+            <li><a href="category.html">Lifestyle</a></li>
+            <li><a href="category.html">Business</a></li>
+            <li><a href="category.html">Science</a></li>
+            <li><a href="category.html">Opinion</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Press Room</a></li>
+            <li><a href="#">Ethics Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Corrections</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year></span> NEWSMAG. All rights reserved. Stories That Matter.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Set current date
+    (function() {
+      var dateEl = document.getElementById('current-date');
+      if (dateEl) {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        dateEl.textContent = new Date().toLocaleDateString('en-US', options);
+      }
+    })();
+  </script>
+</body>
+</html>
